@@ -1,8 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## files content
+1) route.js          ← API route to fetch stock data
+Server-side API route that receives a POST request with an array of stock symbols.
 
-## Getting Started
+Fetches data using yahoo-finance2.
 
-First, run the development server:
+Returns structured data with:
+
+cmp: current market price
+
+peRatio: trailing P/E ratio
+
+earnings: trailing EPS
+
+
+2) page.js                   ← Main page that renders the dashboard
+   Renders the PortfolioTable component on the homepage.
+
+Uses the App Router structure of Next.js 13+.
+
+
+3) PortfolioTable.js         ← Renders table & handles client-side logic
+Client component that:
+
+Loads the portfolio data
+
+Calls the API with all stock symbols
+
+Updates the table with live data and calculated values
+
+Handles formatting (currency/percentage) and color coding for gain/loss.
+
+
+4) portfolioTable.module.css ← CSS module for styling table
+CSS Module scoped to the component.
+
+Styles gain/loss cells in red/green.
+
+Applies consistent table styling.
+
+
+5) getPortfolioData.js       ← Static portfolio data (sector-wise)
+Contains static portfolio entries:
+
+Sector name
+
+Stock name
+
+Buy price
+
+Quantity
+
+Exchange (e.g., NSE)
+
+Used as the base to be enriched with live data.
+
+
+## How to Run the Project
+git clone https://github.com/ahiremayur/8sapience_dashboard.git
+cd 8sapience_dashboard
+npm install
+npm install axios react-table 
+npm install yahoo-finance2
+npm run dev
+then on browser open http://localhost:3000/
+
 
 ```bash
 npm run dev
