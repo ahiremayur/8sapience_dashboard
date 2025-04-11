@@ -56,13 +56,13 @@ Used as the base to be enriched with live data.
 
 
 ## How to Run the Project
-git clone https://github.com/ahiremayur/8sapience_dashboard.git
-cd 8sapience_dashboard
-npm install
-npm install axios react-table 
-npm install yahoo-finance2
-npm run dev
-then on browser open http://localhost:3000/
+1. git clone https://github.com/ahiremayur/8sapience_dashboard.git
+2. cd 8sapience_dashboard
+3. npm install
+4. npm install axios react-table
+5. npm install yahoo-finance2
+6. npm run dev
+7. then on browser open http://localhost:3000/
 
 
 ```bash
