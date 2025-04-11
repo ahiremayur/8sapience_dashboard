@@ -1,0 +1,31 @@
+.container {
+    padding: 2rem;
+  }
+  
+  .sectorBox {
+    margin-bottom: 3rem;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .gain {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .loss {
+    color: red;
+    font-weight: bold;
+  }
+  
